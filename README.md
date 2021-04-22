@@ -15,8 +15,11 @@ Exibirá a página de boas vindas do AdonisJS.
 ## Para testes de Crud, foram criados as seguintes rotas:
 ### Usuários Públicos:
 GET [https://cyrela-rm85679.herokuapp.com/PublicUser](https://cyrela-rm85679.herokuapp.com/PublicUser) - Lista todos os usuários
+
 Post [https://cyrela-rm85679.herokuapp.com/PublicUser](https://cyrela-rm85679.herokuapp.com/PublicUser) - Cria um usuário (enviar nos headers a estrutura de JSON abaixo)
-GET [https://cyrela-rm85679.herokuapp.com/PublicUser/1](https://cyrela-rm85679.herokuapp.com/PublicUser/1) - Faz a busca por dados de usuário por ID (no exemplo está o ID 1);
+
+GET [https://cyrela-rm85679.herokuapp.com/PublicUser/1](https://cyrela-rm85679.herokuapp.com/PublicUser/1) - Faz a busca por dados de usuário por ID (no exemplo está o ID 1)
+
 
 #### Estrutura de JSON para o POST:
 ```json
@@ -31,8 +34,11 @@ GET [https://cyrela-rm85679.herokuapp.com/PublicUser/1](https://cyrela-rm85679.h
 ```
 ### Casas:
 GET [https://cyrela-rm85679.herokuapp.com/houses](https://cyrela-rm85679.herokuapp.com/houses) - Lista todas as casas
+
 Post [https://cyrela-rm85679.herokuapp.com/houses](https://cyrela-rm85679.herokuapp.com/houses) - Cria o registro de uma casa (enviar nos headers a estrutura de JSON abaixo)
-GET [https://cyrela-rm85679.herokuapp.com/houses/1](https://cyrela-rm85679.herokuapp.com/houses/1) - Faz a busca por dados de uma casa  por ID (no exemplo está o ID 1);
+
+GET [https://cyrela-rm85679.herokuapp.com/houses/1](https://cyrela-rm85679.herokuapp.com/houses/1) - Faz a busca por dados de uma casa  por ID (no exemplo está o ID 1)
+
 
 #### Estrutura de JSON para o POST:
 ```json
