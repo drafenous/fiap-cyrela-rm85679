@@ -17,7 +17,7 @@ class PublicUserController {
 
   async create({ request, response }) {
     try {
-      const data = request.only(["fullName", "email", "entity", "gender", "bday"])
+      const data = request.only(["fullname", "email", "entity", "gender", "bday"])
       const user = await PublicUser.create(data);
       return user;
     } catch (error) {
