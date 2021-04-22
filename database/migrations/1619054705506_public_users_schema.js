@@ -12,6 +12,7 @@ class PublicUsersSchema extends Schema {
       table.string('fullname', 50).notNullable()
       table.integer('gender', 1).notNullable()
       table.date('bday').notNullable()
+      table.string('password').notNullable()
       table.timestamps()
     })
   }
