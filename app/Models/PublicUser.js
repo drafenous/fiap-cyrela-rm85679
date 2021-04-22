@@ -7,6 +7,9 @@ class PublicUser extends Model {
   static get table() {
     return 'PublicUsers'
   }
+  static get hidden() {
+    return ['password']
+  }
   static boot() {
     super.boot()
 
