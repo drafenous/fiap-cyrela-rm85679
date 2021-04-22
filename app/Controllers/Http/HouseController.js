@@ -17,7 +17,7 @@ class HouseController {
 
   async create({ request, response }) {
     try {
-      const data = request.only(["owner_name", "owner_registry", "house_name", "status", "address_line1", "address_line2", "cep_zip", "city", "country"])
+      const data = request.only(["owner_name", "owner_registry", "status", "address_line1", "address_line2", "cep_zip", "city", "country"])
       const house = await HouseModel.create(data);
       return house;
     } catch (error) {
