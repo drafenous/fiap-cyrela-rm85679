@@ -84,4 +84,3 @@ module.exports = {
     // database: Env.get('DB_DATABASE', DATABASE_URL.pathname.substr(1))
   }
 }
-}
