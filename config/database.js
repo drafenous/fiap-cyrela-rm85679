@@ -74,13 +74,13 @@ module.exports = {
   pg: {
     client: 'pg',
     connection: {
-      connectionString: Env.get('DATABASE_URL', '')
-    },
-    ssl: { rejectUnauthorized: false }
-    // host: Env.get('DB_HOST', DATABASE_URL.hostname),
-    // port: Env.get('DB_PORT', DATABASE_URL.port),
-    // user: Env.get('DB_USER', DATABASE_URL.username),
-    // password: Env.get('DB_PASSWORD', DATABASE_URL.password),
-    // database: Env.get('DB_DATABASE', DATABASE_URL.pathname.substr(1))
+      connectionString: `${Env.get('DATABASE_URL', '')}`,
+      ssl: { rejectUnauthorized: false }
+      // host: Env.get('DB_HOST', DATABASE_URL.hostname),
+      // port: Env.get('DB_PORT', DATABASE_URL.port),
+      // user: Env.get('DB_USER', DATABASE_URL.username),
+      // password: Env.get('DB_PASSWORD', DATABASE_URL.password),
+      // database: Env.get('DB_DATABASE', DATABASE_URL.pathname.substr(1))
+    }
   }
 }
