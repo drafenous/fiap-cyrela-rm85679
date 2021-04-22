@@ -30,3 +30,10 @@ Route.group(() => {
   Route.get('/:id', "EstablishmentController.findById")
   Route.post('/', "EstablishmentController.create")
 }).prefix('/Establishments')
+
+// Houses
+Route.group(() => {
+  Route.get('/', "HouseController.index")
+  Route.get('/:id', "HouseController.findById")
+  Route.post('/', "HouseController.create")
+}).prefix('/houses')
