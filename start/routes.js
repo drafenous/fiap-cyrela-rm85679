@@ -22,6 +22,8 @@ Route.group(() => {
   Route.get('/', "PublicUserController.index")
   Route.get('/:id', "PublicUserController.findById")
   Route.post('/', "PublicUserController.create")
+  Route.put('/:id', "PublicUserController.update")
+  Route.delete('/:id', "PublicUserController.delete")
 }).prefix('/PublicUser')
 
 // Establishments
@@ -29,6 +31,8 @@ Route.group(() => {
   Route.get('/', "EstablishmentController.index")
   Route.get('/:id', "EstablishmentController.findById")
   Route.post('/', "EstablishmentController.create")
+  Route.put('/:id', "EstablishmentController.update")
+  Route.delete('/:id', "EstablishmentController.delete")
 }).prefix('/Establishments')
 
 // Houses
