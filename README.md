@@ -1,4 +1,7 @@
-# Projeto Cyrela: FIAP
+# Atenção
+Embora o projeto esteja hospedado como Cyrela, o mesmo está sendo utilizado para o projeto Digitown, os dados do projeto Cyrela estarão sendo removidos após a validação da atividade pelo professor.
+
+# Projeto Digitown: FIAP
 Desenvolvido por: Rodrigo Roberto de Almeida, RGM: RM85679.
 Este projeto foi desenvolvido com base no framework AdonisJS.
 ## Os principais motivos de uso do AdonisJS são:
