@@ -20,8 +20,12 @@ Post [https://cyrela-rm85679.herokuapp.com/PublicUser](https://cyrela-rm85679.he
 
 GET [https://cyrela-rm85679.herokuapp.com/PublicUser/1](https://cyrela-rm85679.herokuapp.com/PublicUser/1) - Faz a busca por dados de usuário por ID (no exemplo está o ID 1)
 
+PUT [https://cyrela-rm85679.herokuapp.com/PublicUser/1](https://cyrela-rm85679.herokuapp.com/PublicUser/1) - Faz a busca por ID e atualiza os dados enviados via header (json) (no exemplo está o ID 1)
 
-#### Estrutura de JSON para o POST:
+DELETE [https://cyrela-rm85679.herokuapp.com/PublicUser/1](https://cyrela-rm85679.herokuapp.com/PublicUser/1) - Faz a busca por ID e deleta a entrada no banco de dados (no exemplo está o ID 1)
+
+
+#### Estrutura de JSON para o POST ou PUT:
 ```json
 {
 	"fullname": "Rodrigo Roberto de Almeida", // Nome completo
@@ -33,24 +37,23 @@ GET [https://cyrela-rm85679.herokuapp.com/PublicUser/1](https://cyrela-rm85679.h
 }
 ```
 ### Casas:
-GET [https://cyrela-rm85679.herokuapp.com/houses](https://cyrela-rm85679.herokuapp.com/houses) - Lista todas as casas
+GET [https://cyrela-rm85679.herokuapp.com/establishments](https://cyrela-rm85679.herokuapp.com/establishments) - Lista todas as casas
 
-Post [https://cyrela-rm85679.herokuapp.com/houses](https://cyrela-rm85679.herokuapp.com/houses) - Cria o registro de uma casa (enviar nos headers a estrutura de JSON abaixo)
+Post [https://cyrela-rm85679.herokuapp.com/establishments](https://cyrela-rm85679.herokuapp.com/establishments) - Cria o registro de uma casa (enviar nos headers a estrutura de JSON abaixo)
 
-GET [https://cyrela-rm85679.herokuapp.com/houses/1](https://cyrela-rm85679.herokuapp.com/houses/1) - Faz a busca por dados de uma casa  por ID (no exemplo está o ID 1)
+GET [https://cyrela-rm85679.herokuapp.com/establishments/1](https://cyrela-rm85679.herokuapp.com/establishments/1) - Faz a busca por dados de uma casa  por ID (no exemplo está o ID 1)
+
+PUT [https://cyrela-rm85679.herokuapp.com/establishments/1](https://cyrela-rm85679.herokuapp.com/establishments/1) - Faz a busca por ID e atualiza os dados enviados via header (json) (no exemplo está o ID 1)
+
+DELETE [https://cyrela-rm85679.herokuapp.com/establishments/1](https://cyrela-rm85679.herokuapp.com/establishments/1) - Faz a busca por ID e deleta a entrada no banco de dados (no exemplo está o ID 1)
 
 
 #### Estrutura de JSON para o POST:
 ```json
 {
-	"owner_name": "Rodrigo Roberto de Almeida", // nome do proprietário
-	"owner_registry": "123.456.789-00", // número de identidade do proprietário, está sendo usado o CPF como exemplo
-	"house_name": "Minha Casa", // nome da casa, caso aplicado, exemplo: Sítio descanso do seu Zé
-	"status": 1, // status 0 = anuncio inativo, status 1 = ativo
-	"address_line1": "Rua Guabijú, 68", // linha de endereço 1
-	"address_line2": "", // linha de endereço 2, para casos internacionais
-	"cep_zip": "03077-100", // CEP ou ZIP code se internacional
-	"city": "São Paulo", // Cidade
-	"country": "Brazil" // País
+  "name": "Rodrigo R. Almeida Company", // Nome da empresa
+  "fantasy_name": "Rodrigo R. Almeida", // Nome fantasia
+  "national_registry": "75.641.329/0001-30", // CNPJ
+  "status": "1", // Status, no caso 0 inativo e 1 ativo
 }
 ```
